@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css'
 import FunctionComponentExample from './react_function_component/functional_component'
+import Employee from './react_class_component/class_component'
 import Student from './react_class_component/class_component_props'
 
 
@@ -54,5 +55,14 @@ ReactDOM.render(
 
 ReactDOM.render(
   <Student name="Jack Bruno" marks="80" ></Student>,
+  document.getElementById("root")
+)
+
+/*
+* Call class component, pass parameter
+*/
+
+ReactDOM.render(
+  <Employee/>,
   document.getElementById("root")
 )
