@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css'
 import FunctionComponentExample from './react_function_component/functional_component'
+import Student from './react_class_component/class_component_props'
 
 
 /*
@@ -43,5 +44,15 @@ ReactDOM.render(block_element, document.getElementById("root"))
 
 ReactDOM.render(
   <FunctionComponentExample name="Jack Bruno" salary="1,00,000 PM" />,
+  document.getElementById("root")
+)
+
+
+/*
+* call class component, pass parameter (access value usin props)
+*/
+
+ReactDOM.render(
+  <Student name="Jack Bruno" marks="80" ></Student>,
   document.getElementById("root")
 )
