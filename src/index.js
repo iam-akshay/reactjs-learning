@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css'
+import FunctionComponentExample from './react_function_component/functional_component'
+
 
 /*
 * Render with JSX
@@ -34,3 +36,12 @@ const block_element = React.createElement("div", {"className": "text_bold"},
   React.createElement("p", null, "Created a blog using block elements without using JSX (using react create element)")
 )
 ReactDOM.render(block_element, document.getElementById("root"))
+
+/*
+* call functional component, pass parameters
+*/
+
+ReactDOM.render(
+  <FunctionComponentExample name="Jack Bruno" salary="1,00,000 PM" />,
+  document.getElementById("root")
+)
